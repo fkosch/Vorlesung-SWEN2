@@ -1,0 +1,43 @@
+h1 {color: blue;}
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.grid-container-input {
+  display: grid;
+  grid-template-columns: 100px 150px;
+  gap: 10px;
+  padding: 10px;
+}
+
+.grid-container-submit {
+  display: grid;
+  grid-template-columns: 100px 100px;
+  gap: 10px;
+  padding: 10px;
+}
+
+.fett {font-weight:bold;}
+
+
+/* unvisited link */
+a:link {
+    color: green;
+}
+
+/* visited link */
+a:visited {
+    color: red;
+}
+
+/* mouse over link */
+a:hover {
+    color: hotpink;
+}
+
+/* selected link */
+a:active {
+    color: blue;
+}
