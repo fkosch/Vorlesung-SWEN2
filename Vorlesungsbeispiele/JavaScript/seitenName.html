@@ -1,0 +1,14 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+        <script>
+        	var url = window.location.pathname;
+        	var filename = url.substring(url.lastIndexOf('/')+1);
+			filename = filename.substring(0,filename.lastIndexOf('.'));
+        	window.document.title = filename + " | xyz";
+        </script>
+	</head>
+	<body>
+	</body>
+</html>

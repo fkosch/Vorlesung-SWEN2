@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title>Formular mit Prüfung</title>
+		<script src="pruefung.js"></script>
+	</head>
+	<body>
+		<a href="https://www.w3resource.com/javascript/form/email-validation.php" target="_blank">Regular Expressions</a>
+		<br/><br/>
+		<form name="form1" onsubmit="return pruefen()">
+		Name:      	<input name="Namensfeld" type="text"><br>
+		Anschrift: 	<input name="Anschriftsfeld" type="text"><br>
+		E-Mail:    	<input name="EMailfeld" type="text"><br>
+		Betreff:   	<select name="Betreff">
+						<option value="nichts">Bitte wählen</option>
+						<option value="Anfrage">Anfrage</option>
+						<option value="Bestellung">Bestellung</option>
+						<option value="Hinweis">Hinweis</option>
+					</select><br>
+		Newsletter abonieren:
+					<input type="Radio" name="News" value="ja"> ja / 
+					nein <input type="Radio" name="News" value="nein">
+					<br/>
+		Text:      <textarea name="Eingabe" cols="30" rows="3">
+					</textarea><br/>
+			<input type="Submit"><input type="reset">
+		</form>
+	</body>
+</html>

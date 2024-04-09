@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+<body>
+
+	<p>Das Intl Objekt ist der Namensraum für die ECMAScript Internationalisierunges API, welche sprachenabhängige Stringvergleiche, Zahlenformate und Datums bzw. Zeitformate unterstützt:
+	<div><a href="https://developer.mozilla.org/de/docs/Web/JavaScript/Reference/Global_Objects/Intl">INTL</a></div></p>
+	
+
+	Deutsches Format:
+	<p id="pdeutsch">deutsch</p>
+	
+	Japanisches Format:
+	<p id="pjapanisch">japanisch</p>
+	
+	<button onclick=myFormat()>klick</button>
+	
+	<script>
+		function myFormat() {
+			var number = 123456.789;
+
+			var pd = document.getElementById("pdeutsch");
+			pd.innerHTML= new Intl.NumberFormat('de-DE', { style: 'currency', currency: 'EUR' }).format(number);
+	
+			var pj = document.getElementById("pjapanisch");
+			pj.innerHTML= new Intl.NumberFormat('ja-JP', { style: 'currency', currency: 'JPY' }).format(number);
+		}
+	</script>
+</body>
+</html>

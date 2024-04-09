@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title>DOM Manipulieren</title>
+	</head>
+	<body>
+		<button onclick="changeDOM()">manipuliere DOM</button>
+		<p id="parent">Text</p>
+		<script>
+			function changeDOM() {
+				var p = document.getElementById("parent");
+				p.innerHTML = "Neuer Text und neue HTML-Kind-Elemente";
+				var newElement = document.createElement("div");
+				p.appendChild(newElement);
+				newElement.innerHTML = "Ich bin ein neues div-Element!"
+			}
+		</script>
+	</body>
+</html>

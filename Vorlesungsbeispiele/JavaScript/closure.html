@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title>closure</title>
+	</head>
+	<body>
+		<p id="counter"></p>
+		<script>
+			var add = (function () {
+				var counter = 0;
+				return function () {
+					counter += 1;
+					return counter}
+			})();
+			add();
+			add();
+			document.getElementById("counter").innerHTML = "Der Zähler steht auf: " + add();
+		</script>
+	</body>
+</html>

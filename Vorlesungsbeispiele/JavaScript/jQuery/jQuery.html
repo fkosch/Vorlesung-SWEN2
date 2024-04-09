@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.js"></script>
+<script>
+$(function(){
+	$("p").on({
+		mouseenter:function(){
+			$(this).css("background-color", "lightgray");
+		},
+		mouseleave:function(){
+			$(this).css("background-color", "lightblue");
+		},
+		click:function(){
+			$(this).css("background-color", "yellow");
+		}
+	});
+	
+	$("button").on({
+		click:function(){
+			var div = $("div");  
+			div.animate({left: '100px'}, "slow");
+			div.animate({fontSize: '3em'}, "slow");
+		}
+	});
+});
+</script>
+</head>
+<body>
+
+<p>Klick mich oder bewege die Maus über mich.</p>
+
+<button>Start Animation</button>
+<p></p>
+<!--Um Elemente zu bewegen, muss man die css Position relative, fixed oder absolute setzen-->
+<div style="background:#98bf21;height:100px;width:200px;position:absolute;">HELLO</div>
+
+</body>
+</html>
