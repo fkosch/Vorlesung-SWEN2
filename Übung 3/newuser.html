@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>User Administration | RetroWeb</title>
+	</head>
+	<body>
+		<form name="formNewUser" onsubmit="return checkInputs()">  
+			<label>Name</label>
+			<input type="text" name="name"/><br/>  
+			<label>Password</label>
+			<span title="Allowed are lowercase, uppercase letters and numbers. The length must be between 10 and 20 characters. A lowercase letter, an uppercase letter and a number must be present.">
+				<input type="password" name="password"/>
+			</span><br/>  
+			<label>Email</label>
+			<input type="email" name="email"/><br/> 
+			<label>Administrator</label>
+			<input type="checkbox" name="admin"/><br/><br/>
+			<input type="submit" value="add user"/>  
+		</form>  
+		<script src="scriptUser.js"></script>
+	</body>
+</html>
+
+
+
+
